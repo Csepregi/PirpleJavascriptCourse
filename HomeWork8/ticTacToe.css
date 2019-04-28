@@ -1,0 +1,17 @@
+table{
+    display: center;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+
+td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    }
+
+    .red {
+    
+        background-color: red;
+    }
+    

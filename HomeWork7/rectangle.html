@@ -1,0 +1,73 @@
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title></title>
+      <meta charset="UTF-8">
+    <style>
+        #TenRect {
+            padding: 50px 50px 0px 50px;
+        }
+        .rectangleI {
+            width: 100px;
+            height: 100px;
+            margin: 30px 30px 0px 30px;
+        }
+
+         .reactDiv {
+            float: left;
+            text-align: center;
+        } 
+    </style>
+  </head>
+  <body>
+        <h1>Gabor Favorite colors</h1>
+        <h2>The page is about my favourite colors</h2>
+
+        <div id="TenRect">
+
+        </div>
+        
+          <script>
+              window.onload = () => {
+                  console.log("Here are the rectangle IDs");
+                    createRect();
+                    //AddColors();
+
+                };
+
+                const colors = ["#ff6f61", '#bf3eff', '#669977', '#668899', '#0e2f44', '#5d0f25', '#5d0f25', '#97A8C6', '#50AF66', '#92243F'];
+
+                const creationDiv = document.getElementById("TenRect");
+                
+                const newElement = document.createElement("div");
+                
+                
+                const createRect = () => {
+                  for(let i = 0 ; i < 10 ; i++) {
+                  const rectDiv = document.createElement('div');
+                  rectDiv.setAttribute('class', 'reactDiv');
+                  const rectangleI = document.createElement('div');
+                  rectangleI.setAttribute('class', 'rectangleI')
+                  rectangleI.setAttribute('id', i + colors[i]);
+                  console.log(rectangleI.id);
+                  rectangleI.setAttribute('style', `background:${colors[i]}`);
+                  rectDiv.innerText = colors[i];
+                  rectDiv.appendChild(rectangleI);
+                  rectDiv.appendChild(rectangleI);
+                  newElement.appendChild(rectDiv);
+                  creationDiv.appendChild(newElement);
+                }
+              const hTitle = document.getElementsByTagName('h1');
+              const title = document.getElementsByTagName('title');
+              title.innerText = hTitle.innerText;
+             
+                }
+          
+          </script>
+  </body>
+  </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./todo.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <h1>To Do List</h1>
+    </div>
+    <div>
+        <h2>This is my To Do List for Pirple first Project</h2>
+    </div>
+    <div>
+        <button class="button firstButton" id="signUpButton">Sign Up</button>
+    </div>
+    <div>
+        <button class="button firstButton" id="loginButton">Log in</button>
+    </div>
+    <form action="#" id="SignUpForm">
+        <div>
+            <label>firstname</label><input type="text" name="Registerfirstname" id="Registerfirstname" required>
+        </div>
+        <div>
+            <label>lastname</label><input type="text" name="Registerlastname" id="Registerlastname" required>
+        </div>
+        <div>
+            <label>email</label><input type="text" name="Registeremail" id="Registeremail" required>
+        </div>
+        <div>
+            <label>password</label><input type="password" name="Registerpassword" id="Registerpassword" required>
+        </div>
+        <div>
+            <label>I agree to the Terms of Use</label><input type="checkbox" name="policy" id="policy" required>
+    </div>
+    <div>
+        <button type="submit" id="signUpSubmit">Submit</button>
+    </div>
+    </form>
+
+    <form action="#" id="loginForm">
+        <div>
+            <label>email</label><input type="text" name="emailInput" id="emailInput" required>
+            
+        </div>
+        <div>
+            <label>password</label><input type="password" name="passwordInput" id="passwordInput" required>
+        </div>
+        <div>
+            <button type="submit" id="loginSubmit">Submit</button>
+        </div>
+    </form>
+    
+    <div class="todoListForm" id="tdList">
+        <form  action="#" id="todoList">
+            <input type="text" name="item" id="item" placeholder="Add New" />
+        </form>  
+        <ul id="list"></ul>
+    </div>
+</div>
+
+
+    <script src="./todoproject.js"></script>
+
+    
+</body>
+</html>
